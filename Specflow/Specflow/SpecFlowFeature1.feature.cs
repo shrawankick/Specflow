@@ -155,8 +155,66 @@ this.ScenarioInitialize(scenarioInfo);
                             "21",
                             "1qa2ws",
                             "sky@amail"});
+                table1.AddRow(new string[] {
+                            "Name",
+                            "age",
+                            "phone",
+                            "Email"});
+                table1.AddRow(new string[] {
+                            "shrawan",
+                            "21",
+                            "1qa2ws",
+                            "sky@amail"});
+                table1.AddRow(new string[] {
+                            "shrawan1",
+                            "22",
+                            "1qa2ws",
+                            "sky@amail"});
+                table1.AddRow(new string[] {
+                            "shrawan2",
+                            "23",
+                            "1qa2ws",
+                            "sky@amail"});
+                table1.AddRow(new string[] {
+                            "shrawa3",
+                            "24",
+                            "1qa2ws",
+                            "sky@amail"});
 #line 18
  testRunner.When("when i fill all the mandatory details in the form", ((string)(null)), table1, "When ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Create Employee with mandatory details1")]
+        public virtual void CreateEmployeeWithMandatoryDetails1()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create Employee with mandatory details1", null, ((string[])(null)));
+#line 30
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 33
+ testRunner.When("when i fill all the mandatory details in the form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
             }
             this.ScenarioCleanup();

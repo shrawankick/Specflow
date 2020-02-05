@@ -20,3 +20,17 @@ Scenario: Create Employee with mandatory details
 	
 	| Name    | age | phone  | Email     |
 	| shrawan | 21  | 1qa2ws | sky@amail |
+	| Name    | age | phone  | Email     |
+	| shrawan | 21  | 1qa2ws | sky@amail |
+	| shrawan1 | 22  | 1qa2ws | sky@amail |
+	| shrawan2 | 23  | 1qa2ws | sky@amail |
+	| shrawa3 | 24  | 1qa2ws | sky@amail |
+
+
+Scenario: Create Employee with mandatory details1 
+	#Given 
+	#And 
+	When when i fill all the mandatory details in the form 
+	#Then 
+	
+	

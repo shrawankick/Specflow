@@ -36,13 +36,27 @@ namespace UnitTestProjectSpecFlow.Steps
         }
 
         [When(@"when i fill all the mandatory details in the form")]
+        
         public void WhenWhenIFillAllTheMandatoryDetailsInTheForm(Table table)
         {
-            Employee employee = table.CreateInstance<Employee>();
-            Console.WriteLine(employee.Name);
-            Console.WriteLine(employee.Age);
-            Console.WriteLine(employee.Phone);
-            Console.WriteLine(employee.Email);
+            //Employee employee = table.CreateInstance<Employee>();
+            //Console.WriteLine(employee.Name);
+            //Console.WriteLine(employee.Age);
+            //Console.WriteLine(employee.Phone);
+            //Console.WriteLine(employee.Email);
+
+           // accessing multiple values in the data 
+            var details = table.CreateSet<Employee>();
+
+            foreach (Employee emp in details)
+            {
+                Console.WriteLine("details of all the employes ");
+                Console.WriteLine("###################################");
+                Console.WriteLine(emp.Name);
+                Console.WriteLine(emp.Age);
+                Console.WriteLine(emp.Phone);
+                Console.WriteLine(emp.Email);
+            }
         }
 
     }
