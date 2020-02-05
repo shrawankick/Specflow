@@ -188,12 +188,16 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Create Employee with mandatory details1")]
-        public virtual void CreateEmployeeWithMandatoryDetails1()
+        [NUnit.Framework.DescriptionAttribute("Create Employee with mandatory details for list")]
+        [NUnit.Framework.TestCaseAttribute("shrawan", "21", "1234567890", "sky@amail", null)]
+        [NUnit.Framework.TestCaseAttribute("shrawan1", "22", "1234567890", "sky@amail", null)]
+        [NUnit.Framework.TestCaseAttribute("shrawan2", "23", "1234567890", "sky@amail", null)]
+        [NUnit.Framework.TestCaseAttribute("shrawa3", "24", "1234567890", "sky@amail", null)]
+        public virtual void CreateEmployeeWithMandatoryDetailsForList(string name, string age, string phone, string email, string[] exampleTags)
         {
-            string[] tagsOfScenario = ((string[])(null));
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create Employee with mandatory details1", null, ((string[])(null)));
-#line 30
+            string[] tagsOfScenario = exampleTags;
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create Employee with mandatory details for list", null, exampleTags);
+#line 29
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -213,8 +217,8 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 33
- testRunner.When("when i fill all the mandatory details in the form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 32
+ testRunner.When(string.Format("when i fill all the mandatory details in the form {0}, {1}, {2} and <email>", name, age, phone), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
             }
             this.ScenarioCleanup();

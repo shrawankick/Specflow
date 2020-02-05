@@ -59,5 +59,17 @@ namespace UnitTestProjectSpecFlow.Steps
             }
         }
 
+        [When(@"when i fill all the mandatory details in the form (.*), (.*),(.*) and (.*)")]
+        public void WhenWhenIFillAllTheMandatoryDetailsInTheForm(string name, int age, Int64 phone, string email)
+        {
+            Console.WriteLine("Name : " + name);
+            Console.WriteLine("phone : " + phone);
+            Console.WriteLine("age : " + age);
+            Console.WriteLine("Email : " + email);
+            
+        }
+
+
+
     }
 }

@@ -26,11 +26,16 @@ Scenario: Create Employee with mandatory details
 	| shrawan2 | 23  | 1qa2ws | sky@amail |
 	| shrawa3 | 24  | 1qa2ws | sky@amail |
 
-
-Scenario: Create Employee with mandatory details1 
+Scenario Outline: Create Employee with mandatory details for list 
 	#Given 
 	#And 
-	When when i fill all the mandatory details in the form 
+	When when i fill all the mandatory details in the form <Name>, <age>, <phone> and <email>
 	#Then 
-	
+Examples: 
+	| Name    | age | phone  | Email     |
+	| shrawan | 21  | 1234567890 | sky@amail |
+	| shrawan1 | 22  | 1234567890 | sky@amail |
+	| shrawan2 | 23  | 1234567890 | sky@amail |
+	| shrawa3 | 24  | 1234567890 | sky@amail |
+
 	
