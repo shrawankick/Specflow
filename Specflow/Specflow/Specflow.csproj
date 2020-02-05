@@ -102,12 +102,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Steps\employee.cs" />
+    <Compile Include="Steps\SpecFlowFeature1Steps.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
     <None Include="ReadMe.md" />
+    <None Include="SpecFlowFeature1.feature" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
